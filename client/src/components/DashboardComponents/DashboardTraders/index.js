@@ -23,10 +23,6 @@ class DashboardTraders extends Component {
 
       this.setState({
         trader1: response.data[0].username,
-        trader2: response.data[1].username,
-        trader3: response.data[2].username,
-        trader4: response.data[3].username,
-        trader5: response.data[4].username
       })
 
       })
@@ -41,10 +37,6 @@ class DashboardTraders extends Component {
         <h3>New Traders:</h3>
           <ul>
             <li>{this.state.trader1}</li>
-            <li>{this.state.trader2}</li>
-            <li>{this.state.trader3}</li>
-            <li>{this.state.trader4}</li>
-            <li>{this.state.trader5}</li>
           </ul>
       </div>
     );

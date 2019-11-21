@@ -45,7 +45,7 @@ class Navbar extends Component {
                         </div>
                          <div className="col-1">
                             <section className="navbar-section">
-                                <Link to="/sentiment" className="btn btn-link text-secondary">
+                                <Link to="/sentiment/btc" className="btn btn-link text-secondary">
                                 <span className="text-secondary">Sentiment</span></Link>
                             </section>    
                         </div>

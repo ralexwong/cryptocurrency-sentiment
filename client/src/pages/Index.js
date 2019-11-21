@@ -47,40 +47,7 @@ class Index extends Component {
             </Container>
           </div>
         </Row>
-        {/* ABOUT CARD START -----------------------> */}
 
-        {/* DEVS CARD START -----------------------> */}
-        <Row>
-          <div className="block" id="team">
-            <h1>Meet the Team </h1>
-            <Row>
-              <Col size="4">
-                <div>
-                  <img className="dev" src={require("./Image/Raphael.png")} />
-                </div>
-                <h4 style={{ color: "palevioletred" }}>Raphael</h4>
-                <h6 style={{ color: "pink" }}>Full Stack Web Developer</h6>
-              </Col>
-              <Col size="4">
-                <div>
-                  <img className="dev" src={require("./Image/Zia.png")} />
-                </div>
-                <h4 style={{ color: "palevioletred" }}>Zia</h4>
-                <h6 style={{ color: "pink" }}>Full Stack Web Developer</h6>
-              </Col>
-              <Col size="4">
-                <div>
-                  <img className="dev" src={require("./Image/Alex.png")} />
-                </div>
-                <h4 style={{ color: "palevioletred" }}>Alex</h4>
-                <h6 style={{ color: "pink" }}>Full Stack Web Developer</h6>
-              </Col>
-            </Row>
-          </div>
-        </Row>
-        {/* DEVS CARD START -----------------------> */}
-
-        {/* DEVS CARD START -----------------------> */}
         <Row>
           <div className="block" id="policy">
             <Container>
@@ -98,35 +65,7 @@ class Index extends Component {
         </Row>
         <Row>
           <div className="block" id="signup">
-            <Container>
-              <div class="formGroup">
-                <label for="input" style={{ color: "white" }}>
-                  Sign Up
-                </label>
-                <input
-                  type="text"
-                  class="form-control"
-                  id="inputUsername"
-                  aria-describedby="userName"
-                  placeholder="User Name"
-                />
-              </div>
-              <br />
-              <div class="formGroup">
-                <input
-                  type="password"
-                  class="form-control"
-                  id="exampleInputPassword1"
-                  placeholder="Password"
-                />
-              </div>
-              <br />
-              <button type="submit" id="submitBtn" class="btn btn-primary">
-                Submit
-              </button>
-              <hr/>
-              <small id="userHelp" class="form-text text-muted">As a verified user of this site you will be able to trade in markets offered by Satoshi-Pulse</small>
-            </Container>
+
           </div>
         </Row>
         {/* DEVS CARD START -----------------------> */}

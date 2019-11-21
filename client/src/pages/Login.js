@@ -74,7 +74,7 @@ class Login extends Component {
                                         type="text"
                                         id="username"
                                         name="username"
-                                        placeholder="Username"
+                                        placeholder="a"
                                         value={this.state.username}
                                         onChange={this.handleChange}
                                     />
@@ -90,6 +90,7 @@ class Login extends Component {
                                         id="password"
                                         type="password"
                                         name="password"
+                                        placeholder="a"
                                         value={this.state.password}
                                         onChange={this.handleChange}
                                     />

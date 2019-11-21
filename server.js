@@ -18,6 +18,8 @@ const PORT = process.env.PORT || 3001;
 // Route requires
 const user = require('./routes')
 
+require('dotenv').config()
+
 
 // // ## Routes and Serve Static Files
 // app.use(express.static(__dirname + './client/public'));
@@ -99,15 +101,7 @@ function startSocket(server) {
 	//##SocketIO Server --> END
 }
 
-
-
-
-//mongoose.Promise = global.Promise
-
-// your local database url
-// 27017 is the default mongoDB port
-
-const uri = 'mongodb://heroku_8zklrb8g:i970h7olhftopcht9ner55j071@ds211708.mlab.com:11708/heroku_8zklrb8g' || process.env.MONGODB_URI;
+const uri = process.env.MONGODB_URI || '';
 
 mongoose.connect(uri).then(
 	() => {
@@ -120,18 +114,6 @@ mongoose.connect(uri).then(
 		console.log(err);
 	}
 );
-
-
-// const uri = "mongodb+srv://alexmongo:PYKuCj@4Cw@2tEt@cluster0-wrwod.mongodb.net/test?retryWrites=true&w=majority";
-
-// const client = new MongoClient(uri, { useNewUrlParser: true });
-// client.connect(err => {
-//   const collection = client.db("test").collection("devices");
-//   // perform actions on the collection object
-//   client.close();
-// });
-
-
 
 // Starting Server 
 const server = app.listen(PORT, () => {
