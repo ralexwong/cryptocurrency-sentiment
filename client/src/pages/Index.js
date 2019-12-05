@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import { Link } from 'react-router-dom'
 import logo from "./logo.png";
 import "./Image/Alex.png";
 import "./Image/Raphael.png";
@@ -27,7 +28,6 @@ class Index extends Component {
           <div className="block" id="about">
             <Container>
               <Row>
-                <Col size="6">
                   <p className="aboutTitle">Satoshi-Pulse</p>
                   <h4>
                     The main use for this application is to tract the sentiment
@@ -39,10 +39,6 @@ class Index extends Component {
                     complexity of sentiment analysis by making it as simple as
                     having 3 inputs and a click of a button .
                   </h4>
-                </Col>
-                <Col size="6">
-                  <img></img>
-                </Col>
               </Row>
             </Container>
           </div>
@@ -65,7 +61,9 @@ class Index extends Component {
         </Row>
         <Row>
           <div className="block" id="signup">
-
+            <Link to="/login">
+              Let's get started!
+            </Link>
           </div>
         </Row>
         {/* DEVS CARD START -----------------------> */}

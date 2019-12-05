@@ -12,7 +12,7 @@ class Login extends Component {
             password: '',
             redirectTo: null
         }
-  
+
     }
     handleChange = event => {
         this.setState({
@@ -52,10 +52,10 @@ class Login extends Component {
             }).catch(error => {
                 console.log('login error: ')
                 console.log(error);
-                
+
             })
     }
-    
+
     render() {
         if (this.state.redirectTo) {
             return <Redirect to={{ pathname: this.state.redirectTo }} />
@@ -103,7 +103,7 @@ class Login extends Component {
                                     <a className="forgot-pwd signUpLink" href="/Account/PasswordReset">Forgot password?</a>
                                 </div>
                             </div>
-                            
+
                             <div className="form-group ">
                                 <button
                                     className="btn btn-primary col-mr-auto"
@@ -115,8 +115,15 @@ class Login extends Component {
                         </form>
                         <hr></hr>
                         <p className="section-register-footer">
-                        <span>Don't have an account? </span>
-                        <a class="signUpLink" href="/account/Register">Sign Up</a>
+                            <span>Don't have an account? </span>
+                            <a class="signUpLink" href="/account/Register">Sign Up</a>
+                        </p>
+                        <p id="testAccountInfo">
+                            If you do not want to sign up with an account you can use our test account!
+                            <br></br>
+                            username: a
+                            <br></br>
+                            password: a
                         </p>
                     </Container>
                 </div>
